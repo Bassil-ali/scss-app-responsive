@@ -1,0 +1,64 @@
+.header {
+  padding: 0px 20px;
+  overflow: hidden;
+  border-bottom: 1px solid $greancolor;
+  .logo{
+    float: $float-left;
+    width: 30%;
+    padding-left: 0%;
+    @media #{$minSmall} {
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
+    @media #{$minMedium} {
+      width: 30%;
+      float: $float-left;
+      text-align: $text-align-left;
+    }
+
+  }
+  h1{
+     margin-bottom: 0;
+  }
+  .navbar{
+    overflow: hidden;
+    background-color: $redcolor;
+    border-radius: 10px;
+    @media #{$minSmall} {
+      width: 100%;
+      float: none;
+      text-align: center;
+      display: block !important;
+    }
+    @media #{$minMedium} {
+      width: 70%;
+      float: $float-left;
+      text-align: $text-align-left;
+      display: block !important;
+    }
+    @media #{$maxMobile} {
+      display: none;
+      width: 100%;
+    }
+    li {
+      width: 20%;
+      float: $float-left;
+      font-size: 18px;
+      text-align: center;
+      @media #{$maxMobile} {
+        float: none;
+        display: block;
+      }
+      a{
+        color: #FFF;
+        text-decoration: none;
+        padding: 15px 10px;
+        display: block;
+        &:hover {
+          color: #444444;
+        }
+      }
+    }
+  }
+}

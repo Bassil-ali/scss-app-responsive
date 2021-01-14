@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<title>sass app</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="normalize.css">
+<link  href="css/fontawesome.css" rel="stylesheet">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(function (){
+       $('.btn-togeller').on('click', function (){
+           $('.navbar').slideToggle();
+
+       });
+    });
+
+</script>
+<!--<link rel="stylesheet" href="css/home-rtl.scss">-->
+<body>
+<!--<di class="product">-->
+<!--    product name-->
+<!--    <div class="overlay"></div>-->
+<!--</di>-->
+<div class="header">
+    <div class="container">
+        <div class="logo">
+            <h1>Composiosn</h1>
+            <p>free courses psc only</p>
+            <button class="btn-togeller">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <ul class="navbar">
+            <li><a href="#">home</a></li>
+            <li><a href="#">course</a></li>
+            <li><a href="#">abouts</a></li>
+            <li><a href="#">books</a></li>
+            <li><a href="#">noty</a></li>
+        </ul>
+    </div>
+</div>
+<div class="slider">
+    <div class="container">
+        <blockquote>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad dicta ducimus error eum illum"</blockquote>
+        <center><img src="img/defualt.png" alt=""></center>
+        <ul class="bullets">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="head">
+            <h4>Our Work</h4>
+        </div>
+    </div>
+</div>
+<br><br>
+<div class="services">
+    <div class="container">
+        <div class="service-box">
+            <h3 class="service-title"><i class="fa fa-home"> </i>testing title</h3>
+            <p class="service-desk text-center-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam architecto at consequuntur cum, delectus et explicabo, illo, magnam magni neque officia saepe sapiente similique soluta sunt velit voluptas voluptatem.</p>
+                 <a class="link" href="#">read more...</a>
+        </div>
+        <div class="service-box">
+            <h3 class="service-title"><i class="fas fa-users"> </i>testing title</h3>
+            <p class="service-desk text-center-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam architecto at consequuntur cum, delectus et explicabo, illo, magnam magni neque officia saepe sapiente similique soluta sunt velit voluptas voluptatem.</p>
+            <a class="link" href="#">read more...</a>
+        </div>
+        <div class="service-box">
+            <h3 class="service-title"><i class="fas fa-gem"> </i>testing title</h3>
+            <p class="service-desk text-center-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam architecto at consequuntur cum, delectus et explicabo, illo, magnam magni neque officia saepe sapiente similique soluta sunt velit voluptas voluptatem.</p>
+            <a class="link" href="#">read more...</a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <br><br>
+</div>
+<br><br>
+<div class="our-plyers">
+    <div class="container">
+        <div class="head">
+            <h4>plyers</h4>
+        </div>
+        <br><br>
+        <div class="plyer-box">
+            <img class="avatar" src="img/user1-128x128.jpg">
+            <h3 class="plyer-title"><span>name:</span>bassil ali</h3>
+            <p class="plyer-desk">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam architecto at consequuntur cum, delectus et explicabo, illo,</p>
+            <a class="link" href="#">read more...</a>
+        </div>
+        <div class="plyer-box">
+            <img  class="avatar" src="img/user4-128x128.jpg">
+            <h3 class="plyer-title"><span>name:</span>bassil ali</h3>
+            <p class="plyer-desk text-center-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam architecto at consequuntur cum, delectus et explicabo, illo,</p>
+            <a class="link" href="#">read more...</a>
+        </div>
+        <div class="plyer-box">
+            <img class="avatar" src="img/user1-128x128.jpg">
+            <h3 class="plyer-title"><span>name:</span>bassil ali</h3>
+            <p class="plyer-desk text-center-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam architecto at consequuntur cum, delectus et explicabo, illo, </p>
+            <a class="link" href="#">read more...</a>
+        </div>
+        <div class="plyer-box">
+            <img class="avatar" src="img/user4-128x128.jpg">
+            <h3 class="plyer-title"><span>name:</span>bassil ali</h3>
+            <p class="plyer-desk text-center-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam architecto at consequuntur cum, delectus et explicabo, illo,</p>
+            <a class="link" href="#">read more...</a>
+        </div>
+        <div class="plyer-box">
+            <img class="avatar" src="img/user8-128x128.jpg">
+            <h3 class="plyer-title"><span>name:</span>bassil ali</h3>
+            <p class="plyer-desk">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam architecto at consequuntur cum, delectus et explicabo, illo, </p>
+            <a class="link" href="#">read more...</a>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<div class="lorem-plyers">
+    <div class="container">
+        <div class="head">
+            <h4>plyers ipsum</h4>
+        </div>
+        <br><br>
+        <div class="lorem-box">
+            <img class="lorem-img" src="img/photo4.jpg">
+        </div>
+        <div class="lorem-box">
+            <img  class="lorem-img" src="img/photo3.jpg">
+        </div>
+        <div class="lorem-box">
+            <img class="lorem-img" src="img/photo1.png">
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+</div>
+
+<br>
+<div class="footer">
+    <div class="container">
+        <div class="gallery">
+            <h3 class="section-footer">latest from blog</h3>
+            <div class="img-footer">
+                <img src="img/user1-128x128.jpg"></img>
+                <div class="text">
+                <h4>lorem testing title</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores autem ex fugit impedit quam qui quisquam voluptas! Aperiam cupiditate, </p>
+                </div>
+            </div>
+            <div class="img-footer">
+                <img src="img/user4-128x128.jpg"></img>
+                <div class="text">
+                    <h4>lorem testing title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores autem ex fugit impedit quam qui quisquam voluptas! Aperiam cupiditate, </p>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <h3 class="section-footer">compony inf</h3>
+            <ul>
+                <li>compony name</li>
+                <li>phone number</li>
+                <li>adress</li>
+                <li>tell:0996813485</li>
+                <li>fax:094820720</li>
+                <li><span>baselali337@gmail.com</span></li>
+                <li>0-5-3-23</li>
+            </ul>
+            <h4 class="working">working hour</h4>
+            <p>monday -friday- 8:00 Am - pm</p>
+        </div>
+        <div class="content">
+            <h3 class="section-footer">content us</h3>
+            <form>
+                <input type="text" name="" placeholder="name">
+                <input type="email" name="" placeholder="Email">
+                <textarea placeholder="message"></textarea>
+                <input class="main-buttone" type="submit" value="submit">
+            </form>
+        </div>
+        <div class="clearfix"></div>
+        <div class="copy-right">
+            <div class="text">
+             All copy right reserved &copy; 2021
+            </div>
+            <div class="author">
+            Designed by bassil ali
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

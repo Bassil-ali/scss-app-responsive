@@ -1,0 +1,25 @@
+* {
+  @include prefix(box-sizing,border-box,webkit moz o)
+}
+.container {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media  #{$minSmall} {
+    width: 750px;
+  }
+  @media  #{$minMedium} {
+    width: 970px;
+  }
+  @media  #{$minlarge} {
+    width: 1176px;
+  }
+}
+.clearfix{
+  clear: both;
+}
+.text-center-xs{
+  @media #{$maxMobile} {
+    text-align: center;
+  }
+}

@@ -1,0 +1,126 @@
+.slider {
+  blockquote {
+    font-size: 20px;
+    text-align: center;
+    font-family: Tahoma Arial;
+    font-style: italic;
+    font-weight: bold;
+    color: #5e5e5e;
+    width: 80%;
+    margin: 30px auto;
+  }
+  img{
+    max-width: 900px;
+    height: 300px;
+    border-radius: 4px;
+    @media #{$maxMobile} {
+      width: 250px;
+      height: 150px;
+    }
+  }
+  .bullets{
+    text-align: center;
+    li{
+    display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-color: $greancolor;
+      border-radius: 50%;
+      border: 3px solid $greancolor;
+      cursor: pointer;
+      &.active,
+      &:hover{
+        background-color: #FFF;
+        border: 3px solid #585454;
+    }
+    }
+  }
+}
+.services {
+  .service-box {
+    border-top: 2px solid gray;
+    float: $float-left;
+    width: (100% /3);
+    &:not(:last-of-type) {
+      padding-right: 30px;
+    }
+    @media #{$maxMobile} {
+      width: 100%;
+      float: none;
+      i{
+        display: block;
+        margin-bottom: 15px;
+      }
+    }
+    .service-title {
+      color: #333;
+      text-align: center;
+      @media #{$maxMobile} {
+        float: none;
+        i {
+          text-align: center;
+          display: block;
+          margin-bottom: 15px;
+        }
+      }
+      i {
+        position: relative;
+      }
+    }
+    .service-desk {
+      color: #777;
+    }
+    .link {
+      color: #294b68;
+      text-decoration: none;
+    }
+  }
+}
+.our-plyers{
+  .plyer-box{
+    padding-top: 30px;
+    border-top: 2px solid gray;
+    float: $float-left;
+    width: (100% /5);
+    padding-right: 20px;
+    @media #{$maxMobile} {
+      float: $float-left;
+      width: (100% /2);
+      text-align: center;
+      &:last-child{
+        display: none;
+      }
+    }
+    .avatar{
+      max-width: 100%;
+    }
+    .plyer-title{
+      color: #444;
+      font-weight: normal;
+      span{
+        font-weight: bold;
+      }
+    }
+    .plyer-desk{
+      color: #777;
+    }
+    .link{
+      color: #294b68;
+      text-decoration: none;
+    }
+  }
+}
+.lorem-plyers{
+  .lorem-box{
+    padding-top: 30px;
+    border-top: 2px solid gray;
+    float: $float-left;
+    width: (94% / 3);
+    &:not(:last-of-type){
+      margin-right: 3%;
+    }
+    .lorem-img{
+      max-width: 100%;
+    }
+  }
+}

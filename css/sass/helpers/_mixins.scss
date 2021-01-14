@@ -1,0 +1,36 @@
+@mixin minMeduim{
+   @media (min-width: 992px) {
+     @content;
+
+   }
+
+}
+
+
+/*  overlay  */
+@mixin overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+}
+
+@mixin prefix($property,$value,$prefixes:() ) {
+  @each $prefix in $prefixes{
+    #{'-' + $prefix + '-' + $property}:$value;
+  }
+  #{$property}:$value;
+}
+@mixin keyf($animatoin-name){
+  @-webkit-keyframes #{$animatoin-name} {
+    @content
+  }
+  @-moz-keyframes #{$animatoin-name} {
+    @content
+  }
+  @keyframes #{$animatoin-name} {
+
+    @content
+  }
+}

@@ -1,0 +1,98 @@
+.footer{
+  background-color: #bab5b5;
+  overflow-x: hidden;
+  padding-top: 50px;
+  margin-top: 50px;
+  .gallery, .info ,.content {
+    float: $float-left;
+  }
+  .gallery{
+    width: 50%;
+    @media #{$maxMobile} {
+      width: 100%;
+    }
+    .img-footer{
+      overflow: hidden;
+      img{
+        width: 150px;
+        height: 150px;
+        float: $float-left;
+        border-bottom: 30px;
+        margin-bottom: 30px;
+      }
+      .text{
+        width: calc(100% - 180px);
+        float: $float-left;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+      h4{
+        color: $redcolor;
+        margin: 10px 0px 0px;
+      }
+      p{
+        color: #333333;
+        line-height: 1.5;
+      }
+    }
+  }
+  .info{
+    width: 25%;
+    @media #{$maxMobile} {
+      width: 100%;
+    }
+    ul{
+      color: #5e5e5e;
+      line-height: 1.6;
+      li{
+        span{
+          color: $redcolor;
+        }
+      }
+    }
+    h4{
+      font-weight: bold;
+      margin-bottom: 0px;
+      color: #5e5e5e;
+    }
+    p{
+      color: #5e5e5e;
+    }
+  }
+  .content{
+    width: 25%;
+    @media #{$maxMobile} {
+      width: 100%;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea{
+      border: 1px solid #c9c9c9;
+      padding: 10px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      width: 100%;
+    }
+    input[type="submit"]{
+      @media #{$maxMobile} {
+       margin-bottom: 20px;
+      }
+    }
+  }
+  .section-footer{
+    color: #444444;
+    font-weight: normal;
+  }
+  .copy-right{
+    padding: 25px 0px;
+    border-top: 1px solid #eeeeee;
+    overflow: hidden;
+    .text, .author{
+      float: $float-left;
+      width: 50%;
+    }
+    .author{
+      text-align: $text-align-left;
+    }
+  }
+}

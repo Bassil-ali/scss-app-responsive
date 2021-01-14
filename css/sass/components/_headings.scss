@@ -1,0 +1,17 @@
+.head{
+  text-align: center;
+  background-color: $redcolor;
+  color: #fff;
+  margin: 2px auto ;
+  border-radius: 10px ;
+  width: 162px;
+  height: 26px;
+  padding-bottom: 10px;
+  h4{
+    font-size: 15px;
+    text-align: center;
+  }
+  &:after{
+    padding-bottom: 30px;
+  }
+}
